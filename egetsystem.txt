@@ -1,0 +1,5 @@
+en bankomat
+
+två icke-triviala systemegenskaper:
+	man får inte sätta in pengar om man inte är inloggad
+	man får inte ta ut mer pengar än man har på kontot

@@ -1,0 +1,24 @@
+% s0 = Start
+% s1 = Logged in (user)
+% s2 = Post_1
+% s3 = Logged in (admin)
+% s4 = Delete
+% s5 = Post_2
+[[s0, [s1, s3]],
+ [s1, [s0, s2]],
+ [s2, [s1]],
+ [s3, [s0, s4, s5]],
+ [s4, [s3]],
+ [s5, [s3]]].
+
+[[s0, []],
+ [s1, [u]],
+ [s2, [u,p]],
+ [s3, [u,a]],
+ [s4, [u,a,d]],
+ [s5, [u,a,p]]].
+
+s0.
+
+ag(ef(and(u,p))).
+
